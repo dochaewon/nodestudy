@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+
+  </style>
+</head>
+<body>
+
+
+<!-- Container (Contact Section) -->
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">업무 협의 회의록</h2>
+  <div class="row">
+    <div class="col-sm-3">
+
+    </div>
+    <form class="posts_form" action="/posts" method="post">
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+        <label>회의 안건</label>
+        <input class="form-control" type="text" name="post[title]" value="" placeholder="title">
+        </div>
+      </div>
+      <label>주요 내용</label>
+      <textarea class="form-control" placeholder="Comment" name="post[body]" rows="30"></textarea>
+      <br>
+      <div class="float_right">작성자: <%= user.nickname %></div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">올리기><</button>
+          <a href="javascript:history.back()"><button class="btn btn-default pull-left">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
