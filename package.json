@@ -1,10 +1,21 @@
 {
   "name": "board",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
+    "async": "^2.5.0",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
-    "express": "^4.15.5"
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.5",
+    "express-session": "^1.15.6",
+    "install": "^0.10.1",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.1.7",
+    "morgan": "^1.8.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -12,5 +23,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dochaewon/nodestudy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dochaewon/nodestudy/issues"
+  },
+  "homepage": "https://github.com/dochaewon/nodestudy#readme",
   "description": ""
 }
